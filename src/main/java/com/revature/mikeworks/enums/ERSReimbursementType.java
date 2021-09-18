@@ -43,19 +43,18 @@ public enum ERSReimbursementType {
 
     public static String toString(ERSReimbursementType input) {
         switch (input) {
-            case (1) -> {
+            case LODGING -> {
                 return "LODGING";
             }
-            case (2) -> {
+            case TRAVEL -> {
                 return "TRAVEL";
             }
-            case (3) -> {
+            case FOOD -> {
                 return "FOOD";
             }
             default -> {
                 return "OTHER";
             }
-        }
         }
     }
 }
