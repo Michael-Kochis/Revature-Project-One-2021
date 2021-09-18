@@ -30,4 +30,22 @@ public enum ERSReimbursementStatus {
             }
         }
     }
+
+    public static String toString(int wrongInput) {
+        return ERSReimbursementStatus.toString(ERSReimbursementStatus.fromInt(wrongInput));
+    }
+
+    public static String toString(ERSReimbursementStatus input) {
+        switch (input) {
+            case APPROVED -> {
+                return "APPROVED";
+            }
+            case DENIED -> {
+                return "DENIED";
+            }
+            default -> {
+                return "PENDING";
+            }
+        }
+    }
 }
