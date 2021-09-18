@@ -36,4 +36,26 @@ public enum ERSReimbursementType {
             }
         }
     }
+
+    public static String toString(int wrongInput) {
+        return ERSReimbursementType.toString(ERSReimbursementType.fromInt(wrongInput));
+    }
+
+    public static String toString(ERSReimbursementType input) {
+        switch (input) {
+            case (1) -> {
+                return "LODGING";
+            }
+            case (2) -> {
+                return "TRAVEL";
+            }
+            case (3) -> {
+                return "FOOD";
+            }
+            default -> {
+                return "OTHER";
+            }
+        }
+        }
+    }
 }
